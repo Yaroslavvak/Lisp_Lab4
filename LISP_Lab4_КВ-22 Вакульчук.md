@@ -48,8 +48,7 @@
   (let ((*print-pretty* nil))
     (if (equal expected actual)
         (format t "passed... ~24a Input: ~24a Result: ~a~%" name input actual)
-        (format t "FAILED... ~24a Input: ~24a~%          Expected: ~a~%          Got:      ~a~%" 
-                name input expected actual))))
+        (format t "FAILED... ~24a Input: ~24a~% Expected: ~a~% Got: ~a~%" name input expected actual))))
 
 (defun test-part-1 ()
   (format t "~%Testing Part 1: Bubble Sort HOF~%")
@@ -108,4 +107,5 @@ passed... Test 2 (Transform)       Input: (1 2 3)                  Result: ((2) 
 passed... Test 3 (Wrap List)       Input: (A B C)                  Result: (((A)) ((B) A) ((C) B))
 passed... Test 4 (Empty)           Input: NIL                      Result: NIL
 ```
+
 
